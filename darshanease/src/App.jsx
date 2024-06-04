@@ -28,52 +28,46 @@ import Users from './Admin/Users';
 import Organizers from './Admin/Organizers';
 import UserEdit from './Admin/UserEdit';
 import OrganizerEdit from './Admin/OrganizerEdit';
+import Rough from './Components/Rough';
 
 function App() {
 
   return (
     <BrowserRouter>
-   <Routes>
-    <Route path='/' element={<Home/>} />
-    {/* Admin */}
-    <Route path='/alogin' element={<Alogin/>}/>
-    <Route path='/asignup' element={<Asignup/>}/> 
-    <Route path='/ahome' element={<Ahome/>}/> 
-    <Route path='/users' element={<Users/>}/> 
-    <Route path='/useredit/:id' element={<UserEdit/>}/> 
-    <Route path='/organizers' element={<Organizers/>}/> 
-    <Route path='/organizeredit/:id' element={<OrganizerEdit/>}/> 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Admin */}
+        <Route path="/alogin" element={<Alogin />} />
+        <Route path="/asignup" element={<Asignup />} />
+        <Route path="/ahome" element={<Ahome />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/useredit/:id" element={<UserEdit />} />
+        <Route path="/organizers" element={<Organizers />} />
+        <Route path="/organizeredit/:id" element={<OrganizerEdit />} />
 
+        {/* Organizer */}
+        <Route path="/ologin" element={<Ologin />} />
+        <Route path="/osignup" element={<Osignup />} />
+        <Route path="/ohome" element={<Ohome />} />
+        <Route path="/mytemple" element={<Mytemple />} />
+        <Route path="/createtemple" element={<CreateTemple />} />
+        <Route path="/edittemple/:id" element={<EditTemple />} />
+        <Route path="/createdarshan" element={<CreatedDarshan />} />
+        <Route path="/bookings" element={<Bookings />} />
 
-
-
-    {/* Organizer */}
-    <Route path='/ologin' element={<Ologin/>}/>
-    <Route path='/osignup' element={<Osignup/>}/>
-    <Route path='/ohome' element={<Ohome/>}/>
-    <Route path='/mytemple' element={<Mytemple/>}/>
-    <Route path='/createtemple' element={<CreateTemple/>}/>
-    <Route path="/edittemple/:id" element={<EditTemple/>} />
-    <Route path='/createdarshan' element={<CreatedDarshan/>}/>
-    <Route path='/bookings' element={<Bookings/>}/>
-
-
-
-    {/* User */}
-    <Route path='/ulogin' element={<Ulogin/>} />
-    <Route path='/usignup' element={<Usignup/>}/>
-    <Route path='/uhome' element={<Uhome/>} />
-    <Route path='/utemples' element={<Utemples/>} />
-    <Route path='/utemple/:id' element={<Utemple/>} />
-    <Route path='/odarshans' element={<Odarshans/>}/>
-    <Route path='/bookdarshan/:id' element={<BookDarshan/>} />
-    <Route path='/mybookings' element={<Mybookings/>} />
-   
-  
-
-   </Routes>
+        {/* User */}
+        <Route path="/ulogin" element={<Ulogin />} />
+        <Route path="/usignup" element={<Usignup />} />
+        <Route path="/uhome" element={<Uhome />} />
+        <Route path="/utemples" element={<Utemples />} />
+        <Route path="/utemple/:id" element={<Utemple />} />
+        <Route path="/odarshans" element={<Odarshans />} />
+        <Route path="/bookdarshan/:id" element={<BookDarshan />} />
+        <Route path="/mybookings" element={<Mybookings />} />
+        <Route path="/mybookings" element={<Rough/>} />
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App
