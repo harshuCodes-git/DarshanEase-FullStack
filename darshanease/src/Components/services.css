@@ -1,0 +1,25 @@
+.services-section {
+    padding: 20px;
+    background-color: #FFD042;
+  }
+  
+  .service-list {
+    max-width: 600px;
+    margin: 0 auto; /* Center the service list */
+  }
+  
+  .service-block {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .service-block h3 {
+    margin-top: 0; /* Remove top margin for heading */
+  }
+  
+  .service-block p {
+    margin-bottom: 0; /* Remove bottom margin for paragraph */
+  }
+  

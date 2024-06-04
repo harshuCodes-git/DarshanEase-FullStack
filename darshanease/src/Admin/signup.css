@@ -1,0 +1,80 @@
+/* Asignup.css */
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  .form-container {
+    background-color: #34d399; /* Green background color */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-content {
+    color: #000; /* Black text color */
+    margin-left: 2rem; /* Adjust margin for separation from image */
+  }
+  
+  .signup-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .signup-content form {
+    margin-top: 1rem;
+  }
+  
+  .signup-content label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #d1d5db; /* Gray text color */
+    margin-bottom: 0.5rem;
+  }
+  
+  .signup-content input {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #d1d5db; /* Gray border */
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .signup-content button {
+    background-color: #ef4444; /* Red background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-content button:hover {
+    background-color: #dc2626; /* Darker red on hover */
+  }
+  
+  .signup-content p {
+    font-size: 0.875rem;
+    color: #d1d5db; /* Gray text color */
+    margin-top: 0.5rem;
+  }
+  
+  .signup-content p button {
+    color: #ef4444; /* Red text color */
+    cursor: pointer;
+  }
+  
+  .signup-content p button:hover {
+    text-decoration: underline;
+  }
+  

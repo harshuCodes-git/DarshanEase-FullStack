@@ -1,0 +1,200 @@
+.navabar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    /* Add any other styles you need for your navbar */
+  }
+  
+  /* Add padding to the top of the content area */
+  .content {
+    padding-top: 150px; /* Adjust the value based on the height of your navbar */
+  }
+  
+  /* Add any other styles for your other elements as needed */
+  
+  
+.class1{
+    background-color: rgb(255, 68, 0);
+    display: flex;
+    justify-content: space-between;
+    
+}
+.img1{
+    padding-left: 250px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    height: 100px;
+    width: 400px;
+}
+.img2{
+    padding-right: 250px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    height: 100px;
+    width: 400px;
+}
+#p6{
+  background: linear-gradient(to bottom, #df1b1b 0%, #b10a1db9 100%);
+  background-color: black;
+  border: none;
+}
+.nav1 {
+    background: linear-gradient(to bottom, #df1b1b 0%, #b10a1db9 100%);
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 21px;
+    height: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 4px;
+    /* position: fixed; */
+    
+}
+
+.nav1 p {
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    color: #b8b6b6;
+}
+
+  .nav1 p:hover  {
+    color: white; /* Change the text color on hover */
+  }
+
+  
+.nav1 p:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 100%; /* Adjust the height of the vertical line as needed */
+    width: 3px; /* Adjust the width of the vertical line as needed */
+    background-color: gold;
+}
+
+.p1 {
+    padding-left: 450px; /* Adjust the padding as needed */
+}
+
+.p6 {
+    padding-right: 400px; /* Adjust the padding as needed */
+}
+
+/* Style for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropbtn {
+  /* background-color: #4CAF50; */
+  color: rgb(198, 193, 193);
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 0 12px ;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+  
+/* Marquee styles with animated color */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(45deg, #ff8800, #e80d5d);
+    font-size: 22px;
+    height: 30px;
+    position: relative;
+  }
+  
+  .marquee-text {
+    display: inline-block;
+    animation: marqueeAnimation 20s linear infinite, colorAnimation 8s linear infinite alternate;
+    
+  }
+  
+  @keyframes marqueeAnimation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes colorAnimation {
+    25% {
+      color: blue; /* Red */
+    }
+    50% {
+      color: rgb(0, 255, 0); /* Green */
+    }
+    100% {
+      color: rgb(0, 255, 213); /* Blue */
+    }
+  }
+  .class{
+    background-image:url("../assets/Background.jpg")
+  }
+  
+
+  @media (max-width: 768px) {
+    .class1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img1,
+    .img2 {
+      padding: 15px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav1 p {
+      margin-bottom: 10px;
+    }
+  
+    .p1,
+    .p4 {
+      padding: 0;
+    }
+  }
+  
+
+  
+  
+  
