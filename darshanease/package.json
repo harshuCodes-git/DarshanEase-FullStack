@@ -13,7 +13,7 @@
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
-    "create-react-app": "^5.0.1",
+    "create-react-app": "^1.2.1",
     "express": "^4.19.2",
     "html2canvas": "^1.4.1",
     "install": "^0.13.0",
